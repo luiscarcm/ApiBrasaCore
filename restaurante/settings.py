@@ -127,6 +127,9 @@ SIMPLE_JWT = {
 CORS_ALLOWED_ORIGINS = config('CORS_ALLOWED_ORIGINS', default='http://localhost:3000', cast=Csv())
 CORS_ALLOW_CREDENTIALS = True
 
+# Required in Django 4.x for cross-origin POST requests
+CSRF_TRUSTED_ORIGINS = config('CORS_ALLOWED_ORIGINS', default='http://localhost:3000', cast=Csv())
+
 # Internationalization
 LANGUAGE_CODE = 'es-co'
 TIME_ZONE = 'America/Bogota'
