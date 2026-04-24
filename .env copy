@@ -1,0 +1,18 @@
+SECRET_KEY=your-secret-key-here
+DEBUG=True
+DB_NAME=restaurante_db
+DB_USER=restaurante
+DB_PASSWORD=mipassword123
+DB_HOST=localhost
+DB_PORT=3306
+ALLOWED_HOSTS=localhost,127.0.0.1
+FRONTEND_URL=http://localhost:3000
+
+# Email (Gmail SMTP — usa una App Password, no tu contraseña normal)
+EMAIL_BACKEND=django.core.mail.backends.smtp.EmailBackend
+EMAIL_HOST=smtp.gmail.com
+EMAIL_PORT=587
+EMAIL_USE_TLS=True
+EMAIL_HOST_USER=
+EMAIL_HOST_PASSWORD=
+DEFAULT_FROM_EMAIL=BrasaCore <noreply@brasacore.com>
